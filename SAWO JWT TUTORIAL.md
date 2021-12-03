@@ -79,7 +79,7 @@ Some fields are extra here, you can ignore them. Now create one post request rou
 
 ```sh
   const app = express();
-  app.post('/sawoLogin',(req,res)=>{
+  app.post('/sawoLogin', async(req,res)=>{
     try {
         const { email, provider_type, provider_id, name } = req.body;
         const user = await User.findOne({ provider_id, provider_type });
