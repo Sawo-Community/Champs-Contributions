@@ -1,4 +1,4 @@
-# Contributions
+# Champs-Contributions
 
 This is the official repository of contributions for the SAWO Community. This repository will contain all of the valid <b>contents</b> that are being developed by our cherished community members.
 
