@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+	font-family: 'Handlee', cursive;
+}
+
+body{
+    height: 100%;
+    background-color: #FFEEAD;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    background: #FFEEAD;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+  
+  #navbar__logo {
+   
+    background-size: 100%; 
+    background: #fe8c00;
+background: -webkit-linear-gradient(to right, #f83600, #fe8c00); 
+background: linear-gradient(to right, #f83600, #fe8c00); 
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .navbar__item {
+    height: 80px;
+  }
+  
+  .navbar__links {
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+  
+    
+
+h1 {
+	color: #96CEB4;
+	font-size: 3rem;
+	font-weight: 50;
+	text-align: center;
+	margin: 1rem 0 3rem; 
+}
+
+.title{
+	color: #000;
+
+	font-weight: 800;
+}
+
+.inputDiv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input{
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 350px;
+    margin: 0.25rem;
+    transition: .5s;
+    font-size: 1.15rem;
+}
+
+.add{
+	outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 50px;
+    background-color: #FF6464;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0.25rem;
+}
+
+.add:hover{
+	opacity: 0.7;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.item{
+	padding: 0.5rem;
+	border-bottom: 4px solid #000;
+	margin-bottom: 1.5rem;
+}
+
+.item_input{
+	background: none;
+	outline: none;
+	border: none;
+	color: #000;
+	font-size: 1.4rem;
+	width: 245px;
+}
+
+.edit{
+	background: none;
+	outline: none;
+	border: none;
+	color: #9AD0EC ;
+	font-size: 1.4rem;
+	margin: 0 0.5rem;
+	cursor: pointer;
+}
+
+.remove{
+	background: none;
+	outline: none;
+	border: none;
+	color: #E60965;
+	font-size: 1.4rem;
+
+	cursor: pointer;
+}

@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+  } 
+  .navbar {
+    background: #FFEEAD;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+  
+  #navbar__logo {
+   
+    background-size: 100%; 
+    background: #fe8c00;
+background: -webkit-linear-gradient(to right, #f83600, #fe8c00); 
+background: linear-gradient(to right, #f83600, #fe8c00); 
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .navbar__item {
+    height: 80px;
+  }
+  
+  .navbar__links {
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    background-color: #FBF46D;
+    flex-direction: column;
+    padding: 50px 0;
+  }
+  section h1 {
+    color: #000;
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  section p {
+    text-align: center;
+    color: #000;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .container {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .texts p {
+    color: black;
+    text-align: left;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  .texts p.replay {
+    text-align: right;
+  }
+  
