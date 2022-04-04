@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    font-family: 'Handlee', cursive;
+    scroll-behavior: smooth; 
+  }
+  
+.navbar {
+    background: #FFEEAD;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px; 
+    justify-content: center;
+  }
+  
+  #navbar__logo {
+   
+    background-size: 100%; 
+    background: #fe8c00;
+background: -webkit-linear-gradient(to right, #f83600, #fe8c00); 
+background: linear-gradient(to right, #f83600, #fe8c00); 
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+  } 
+
+  #sawo-container {
+    height: 300px; 
+    width: 300px;   
+    padding: 30px 20px;  
+    border-radius: 10px;  
+    text-align: center;    
+    position: absolute; 
+    margin:auto; 
+    top:30%;  
+    left:40%;
+  }
+   
+
+  @media screen and (max-width: 768px) {
+    #sawo-container {
+        padding: 0;
+        margin: auto;
+        position: absolute; 
+        left:13%;
+    }
+}

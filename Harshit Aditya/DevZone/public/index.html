@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sawo.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">DevZone</a>
+        </div>
+    </nav>
+    <div>
+        <div id="sawo-container"></div>
+    </div>
+    <script src="https://websdk.sawolabs.com/sawo.min.js"></script>
+    <script>
+        var config = {
+            // should be same as the id of the container created on 3rd step
+            containerID: "sawo-container",
+            // can be one of 'email' or 'phone_number_sms'
+            identifierType: "email",
+            // Add the API key copied from 2nd step
+            apiKey: "2bba633d-1cca-4b9f-ac13-62452dfe4b68",
+            // Add a callback here to handle the payload sent by sdk
+            onSuccess: (payload) => {
+                console.log(payload)
+                window.location.href = "home.html";
+            },
+        };
+        var sawo = new Sawo(config);
+        sawo.showForm();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevZone</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">DevZone</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">Motivation</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#event" class="navbar__links" id="event-page">Events List</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#hackbot" class="navbar__links" id="hackbot-page">HackBot</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#videomeet" class="navbar__links" id="videomeet-page">Video Meet</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#sign-up" class="button btn--show-modal" id="signup" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="section section--hidden">
+        <div class="hero" id="home">
+            <div class="hero__container">
+                <h1 class="hero__heading">A platform for Computer Science <span>enthusiasts</span></h1>
+                <p class="hero__description">Opportunities for everyone !</p>
+                <button class="main__btn"><a href="#about">Explore the platform</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--hidden">
+        <div class="main" id="about">
+            <div class="main__container">
+                <div class="main__img--container">
+                    <div class="main__img--card"><i class="fas fa-hands-helping"></i></div>
+                </div>
+                <div class="main__content">
+                    <h1>Motivation behind this project</h1>
+                    <h2>Learn together ! Grow Together !</h2>
+                    <p> Many students face issues while learning skills and due to lack of guidance they are not able to
+                        maximize their performance.This project helps students to find
+                        resources for learning stuffs related to Computer Science fiels and it also helps students in
+                        collaborating with each other and making new connections which can help them in hackathons,
+                        personal projects, etc.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--hidden">
+        <div class="main" id="event">
+            <div class="main__container">
+                <div class="main__content">
+                    <h1>Events List</h1>
+                    <h2>Add resources to help people</h2>
+                    <p>With the help of Events list we can add resources, hackathons etc which will help people to grow
+                        and learn.</p>
+                    <button class="main__btn"><a href="el.html">Open Events List</a></button>
+                </div>
+                <div class="main__img--container">
+                    <div class="main__img--card"><i class="fas fa-sticky-note"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--hidden">
+        <div class="main" id="hackbot">
+            <div class="main__container">
+                <div class="main__img--container">
+                    <div class="main__img--card"><i class="fas fa-robot"></i></div>
+                </div>
+                <div class="main__content">
+                    <h1>Talk with HackBot 🤖</h1>
+                    <h2>A bot which will help you to solve your general queries</h2>
+                    <p> HackBot is a bot which will help you to solve general queries regarding events, hackathon, web
+                        developement and much more !</p>
+                    <button class="main__btn"><a href="hackbot.html">Open HackBot</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--hidden">
+        <div class="main" id="videomeet">
+            <div class="main__container">
+                <div class="main__content">
+                    <h1>Video Meet</h1>
+                    <h2>Collaborate with people and make new connections !</h2>
+                    <p>With the help of video chat feature we can make connections new people and seek guidance and
+                        collaborate with them for a hackathon, personal project, etc. </p>
+                    <button class="main__btn"><a href="https://devzone-meet.netlify.app/">Open Video Meet</a></button>
+                </div>
+                <div class="main__img--container">
+                    <div class="main__img--card"><i class="fas fa-video"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--hidden">
+        <div class="main" id="sign-up">
+            <div class="main__container">
+                <div class="main__img--container">
+                    <div class="main__img--card" id="card-2">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+                <div class="main__content">
+                    <h1>Contact Us</h1>
+                    <h2>Feel free to message here</h2>
+                    <p>Have a query? Feel free to contact us and we will love to have a feedback and one on one
+                        conversation with you </p>
+                    <button class="main__btn btn--show-modal"><a href="#">Contact Us</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal__header">
+            Write your message/query here
+        </h2>
+        <form class="modal__form" action="/fetch" method="POST">
+            <label>First Name</label>
+            <input type="text" id="name" name="name" placeholder="Name" required />
+            <label>Email Address</label>
+            <input type="email" class="box" id="email" name="email" placeholder="Email" required />
+            <label>Message</label>
+            <input type="text" class="box" id="sub" name="message" placeholder="Enter your message" required />
+            <!-- <input type="submit" value="Submit" id="submit" /> -->
+            <button class="btn"> <a href="done.html"> Next step &rarr;</a></button>
+        </form>
+    </div>
+    <div class="overlay hidden"></div>
+    <!-- Footer Section -->
+    <section class="section section--hidden">
+        <div class="footer__container">
+            <section class="social__media">
+                <div class="social__media--wrap">
+                    <div class="footer__logo">
+                        <a href="/" id="footer__logo">DevZone</a>
+                    </div>
+                    <p class="website__rights">Created by Harshit Aditya 👨‍💻</p>
+                    <div class="social__icons">
+                        <a href="https://www.youtube.com/channel/UCNnS0-eGKFHkPvMtZgS1GoA" class="social__icon--link"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/in/harshitaditya" class="social__icon--link"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/HarshitAditya1" class="social__icon--link"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/HarshitAditya27" class="social__icon--link"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
