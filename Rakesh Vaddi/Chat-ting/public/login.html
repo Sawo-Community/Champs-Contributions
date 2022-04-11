@@ -1,0 +1,110 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN</title>
+    <style>
+        body{
+            background-image: url(https://img.freepik.com/free-vector/social-media-icons_53876-89124.jpg?size=626&ext=jpg);
+        }
+        .container {
+        /* background-color: white; */
+        font-family: Quicksand, sans-serif;
+        display: flex;
+        justify-content: space-around;
+        }
+        .container img {
+        flex: 0.6;
+        object-fit: contain;
+        }
+
+        #sawo-container {
+        height: 156px;
+        width: 300px;
+        }
+
+        h2 {
+        display: none;
+        background-color: greenyellow;
+        padding: 7px;
+        color: rgb(44, 41, 41);
+        }
+        .login-container {
+        flex: 0.4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 400px;
+        min-height: 250px;
+        padding: 20px;
+        margin-top: 100;
+        border-radius: 10px;
+        border: 1px solid grey;
+        background-color: #fff;
+        height : 80%;
+        color: #000;
+        }
+
+        .login-container h1 {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+        color: #1f1e1e;
+        }
+
+        .login-container p {
+        padding: 0 10px 0 10px;
+        text-align: center;
+        }
+
+        #status{
+        background-color: #95d995;
+        text-align: center;
+        padding: 10px;
+        color: rgb(44 41 41);
+        }
+
+        @media (max-width: 400px) {
+        .container img {
+            display: none;
+        }
+
+        .login-container {
+            border: none;
+            flex: 1;
+        }
+
+        #sawo-container {
+            /* height: 500px; */
+            background-color: #bcedef;
+            width: 100%;
+        }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-container">
+        <h1>Login</h1>
+        <div id="sawo-container" style="height: 200px; width: 300px"></div>
+      </div>
+    </div>
+
+    <script src="https://websdk.sawolabs.com/sawo.min.js"></script>  
+
+    <script script type="module">
+        var config = {
+            containerID: "sawo-container",
+            identifierType: "email",
+            apiKey: "API_KEY",
+            onSuccess: (payload) => {
+                window.location.href = '/user'
+                
+          },
+        };
+        var sawo = new Sawo(config);
+        sawo.showForm();
+    </script>
+  </body>
+</html>
