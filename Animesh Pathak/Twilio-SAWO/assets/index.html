@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elder Connect</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="nav-link active" aria-current="page" href="#">Home</a>
+      <a class="nav-link" href="/radio.html" target="_blank">Radio</a>
+    </div>
+    <div class="container">
+      <div class="login-container">
+        <h1 align="center">Elder Connect</h1>
+        <div id="sawo-container" style="height: 400px; width: 300px" align:"center"></div>
+      </div>
+    </div>
+    <script src="https://websdk.sawolabs.com/sawo.min.js"></script>
+    <script>
+      const payload = sessionStorage.getItem("payload");
+      if (payload) {
+        window.location.href = "/video.html";
+      }
+      var config = {
+        containerID: "sawo-container",
+        identifierType: "email", // can be either 'email' or 'phone_number_sms'
+        apiKey: "d0acd238-b70b-4004-993e-6efb2b0b6719", // add your api key here//d0acd238-b70b-4004-993e-6efb2b0b6719
+        onSuccess: (payload) => {
+          sessionStorage.setItem("payload", JSON.stringify(payload));
+            window.location.href = "/video.html";
+        },
+      };
+      var sawo = new Sawo(config);
+      sawo.showForm();
+    </script>
+  </body>
+</html>
